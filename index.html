@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zama Quiz 41–53</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .page {
+      display: none;
+      height: 100vh;
+      padding: 20px;
+    }
+    h1, h2, p {
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.3);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Intro Page -->
+  <div class="page" id="intro" style="display:block; background: linear-gradient(to right, #ff9966, #ff5e62);">
+    <h1>Welcome to Zama Quiz 41–53 🎯</h1>
+    <p>Test your knowledge about FHE, AI privacy & Zama technology!</p>
+    <button onclick="startQuiz()">Start Quiz 🚀</button>
+  </div>
+
+  <!-- Quiz Pages -->
+  <div class="page" id="q1" style="background: linear-gradient(to right, #4facfe, #00f2fe);">
+    <h2>Quiz 41</h2>
+    <p>What is the primary goal of Fully Homomorphic Encryption (FHE)?</p>
+    <button onclick="checkAnswer(1,true)">Compute on encrypted data without decrypting ✅</button>
+    <button onclick="checkAnswer(1,false)">Encrypt only files on disk</button>
+    <button onclick="checkAnswer(1,false)">Speed up blockchain transactions</button>
+    <button onclick="checkAnswer(1,false)">Hide code from developers</button>
+  </div>
+
+  <div class="page" id="q2" style="background: linear-gradient(to right, #43e97b, #38f9d7);">
+    <h2>Quiz 42</h2>
+    <p>Which Zama product allows AI to work on encrypted data?</p>
+    <button onclick="checkAnswer(2,true)">Concrete ML ✅</button>
+    <button onclick="checkAnswer(2,false)">TensorFlow</button>
+    <button onclick="checkAnswer(2,false)">React</button>
+    <button onclick="checkAnswer(2,false)">Solidity</button>
+  </div>
+
+  <div class="page" id="q3" style="background: linear-gradient(to right, #ff9a9e, #fad0c4);">
+    <h2>Quiz 43</h2>
+    <p>Why is FHE important for confidential AI?</p>
+    <button onclick="checkAnswer(3,true)">It protects user privacy ✅</button>
+    <button onclick="checkAnswer(3,false)">It speeds up inference only</button>
+    <button onclick="checkAnswer(3,false)">It reduces hardware cost</button>
+    <button onclick="checkAnswer(3,false)">It creates NFTs</button>
+  </div>
+
+  <div class="page" id="q4" style="background: linear-gradient(to right, #a1c4fd, #c2e9fb);">
+    <h2>Quiz 44</h2>
+    <p>Which library is open-source from Zama?</p>
+    <button onclick="checkAnswer(4,true)">Concrete ✅</button>
+    <button onclick="checkAnswer(4,false)">PyTorch Lightning</button>
+    <button onclick="checkAnswer(4,false)">Angular</button>
+    <button onclick="checkAnswer(4,false)">Node.js</button>
+  </div>
+
+  <div class="page" id="q5" style="background: linear-gradient(to right, #fbc2eb, #a6c1ee);">
+    <h2>Quiz 45</h2>
+    <p>What is FHEVM?</p>
+    <button onclick="checkAnswer(5,true)">A virtual machine for FHE smart contracts ✅</button>
+    <button onclick="checkAnswer(5,false)">A gaming engine</button>
+    <button onclick="checkAnswer(5,false)">A blockchain explorer</button>
+    <button onclick="checkAnswer(5,false)">An AI model trainer</button>
+  </div>
+
+  <div class="page" id="q6" style="background: linear-gradient(to right, #8EC5FC, #E0C3FC);">
+    <h2>Quiz 46</h2>
+    <p>Which concept is key to privacy on the blockchain?</p>
+    <button onclick="checkAnswer(6,true)">Anonymous computation ✅</button>
+    <button onclick="checkAnswer(6,false)">Token incentives</button>
+    <button onclick="checkAnswer(6,false)">Fast block confirmations</button>
+    <button onclick="checkAnswer(6,false)">Public ledgers</button>
+  </div>
+
+  <div class="page" id="q7" style="background: linear-gradient(to right, #FA709A, #FEE140);">
+    <h2>Quiz 47</h2>
+    <p>Zama’s Creator Program rewards are for?</p>
+    <button onclick="checkAnswer(7,true)">Educational content about FHE & Zama ✅</button>
+    <button onclick="checkAnswer(7,false)">Trading $ZAMA</button>
+    <button onclick="checkAnswer(7,false)">Meme contests only</button>
+    <button onclick="checkAnswer(7,false)">Closed-source apps</button>
+  </div>
+
+  <div class="page" id="q8" style="background: linear-gradient(to right, #84fab0, #8fd3f4);">
+    <h2>Quiz 48</h2>
+    <p>TFHE in Zama’s ecosystem stands for?</p>
+    <button onclick="checkAnswer(8,true)">Torus Fully Homomorphic Encryption ✅</button>
+    <button onclick="checkAnswer(8,false)">Trusted File Hash Engine</button>
+    <button onclick="checkAnswer(8,false)">Temporal Fast Homomorphic Encryption</button>
+    <button onclick="checkAnswer(8,false)">Tokenized FHE</button>
+  </div>
+
+  <div class="page" id="q9" style="background: linear-gradient(to right, #FAD0C4, #FFD1FF);">
+    <h2>Quiz 49</h2>
+    <p>What’s the biggest challenge with FHE today?</p>
+    <button onclick="checkAnswer(9,true)">Computation speed ✅</button>
+    <button onclick="checkAnswer(9,false)">Lack of privacy</button>
+    <button onclick="checkAnswer(9,false)">Insufficient encryption</button>
+    <button onclick="checkAnswer(9,false)">Too simple to implement</button>
+  </div>
+
+  <div class="page" id="q10" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
+    <h2>Quiz 50</h2>
+    <p>Zama’s FHE helps developers build:</p>
+    <button onclick="checkAnswer(10,true)">Privacy-preserving apps ✅</button>
+    <button onclick="checkAnswer(10,false)">Video streaming apps</button>
+    <button onclick="checkAnswer(10,false)">Games</button>
+    <button onclick="checkAnswer(10,false)">NFT marketplaces</button>
+  </div>
+
+  <div class="page" id="q11" style="background: linear-gradient(to right, #f6d365, #fda085);">
+    <h2>Quiz 51</h2>
+    <p>Which advantage does FHE give AI models?</p>
+    <button onclick="checkAnswer(11,true)">Process encrypted data safely ✅</button>
+    <button onclick="checkAnswer(11,false)">Only faster training</button>
+    <button onclick="checkAnswer(11,false)">Access public datasets without encryption</button>
+    <button onclick="checkAnswer(11,false)">Reduces GPU usage</button>
+  </div>
+
+  <div class="page" id="q12" style="background: linear-gradient(to right, #a1c4fd, #c2e9fb);">
+    <h2>Quiz 52</h2>
+    <p>Why does Zama support open-source tools?</p>
+    <button onclick="checkAnswer(12,true)">To allow everyone to build privacy-preserving applications ✅</button>
+    <button onclick="checkAnswer(12,false)">To hide research</button>
+    <button onclick="checkAnswer(12,false)">To sell licenses</button>
+    <button onclick="checkAnswer(12,false)">To restrict community access</button>
+  </div>
+
+  <div class="page" id="q13" style="background: linear-gradient(to right, #ff9a9e, #fecfef);">
+    <h2>Quiz 53</h2>
+    <p>Zama’s vision for AI in the future is:</p>
+    <button onclick="checkAnswer(13,true)">AI that reasons over encrypted data safely ✅</button>
+    <button onclick="checkAnswer(13,false)">AI with full public access</button>
+    <button onclick="checkAnswer(13,false)">AI for gaming only</button>
+    <button onclick="checkAnswer(13,false)">AI that replaces encryption</button>
+  </div>
+
+  <!-- Result Page -->
+  <div class="page" id="result" style="background: linear-gradient(to right, #ff9a9e, #fecfef);">
+    <h1>Your Quiz Result 🎉</h1>
+    <p id="score"></p>
+    <button id="tweet">Share on Twitter 🐦</button>
+    <button onclick="restartQuiz()">Play Again 🔁</button>
+  </div>
+
+  <script>
+    let score = 0;
+
+    function startQuiz() {
+      showPage("q1");
+    }
+
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.style.display = "none");
+      document.getElementById(id).style.display = "block";
+    }
+
+    function checkAnswer(q, correct) {
+      if(correct) alert("✅ Correct!"), score++;
+      else alert("❌ Wrong!");
+      if(q < 13) showPage("q" + (q + 1));
+      else {
+        document.getElementById("score").innerText = `You scored ${score}/13 🎯`;
+        showPage("result");
+      }
+    }
+
+    function restartQuiz() {
+      score = 0;
+      showPage("intro");
+    }
+
+    document.getElementById('tweet').addEventListener('click', () => {
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(`I just completed Zama Quiz 41–53 and scored ${score}/13! Can you beat me? #ZamaFHE #AIprivacy`);
+      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+    });
+  </script>
+
+</body>
+</html>
